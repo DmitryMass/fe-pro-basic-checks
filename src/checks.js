@@ -6,6 +6,7 @@ import {
   consoleLoggerWordsFor,
   reducerIf,
   capitalizeString,
+  reducerSwitch,
 } from './index.js';
 
 console.log(fenceString('Hi all to all and all')); // hI AlL To aLl aNd aLl
@@ -13,26 +14,26 @@ console.log(fenceString('Hi all to all and all')); // hI AlL To aLl aNd aLl
 console.log(capitalizeString('test test test')); // Test Test Test
 
 consoleLoggerWordsSplit('test');
-// t
-// e
-// s
-// t
+// // t
+// // e
+// // s
+// // t
 
 consoleLoggerWordsWhile('test');
-// t
-// e
-// s
-// t
+// // t
+// // e
+// // s
+// // t
 consoleLoggerWordsForOf('test');
-// t
-// e
-// s
-// t
+// // t
+// // e
+// // s
+// // t
 consoleLoggerWordsFor('test');
-// t
-// e
-// s
-// t
+// // t
+// // e
+// // s
+// // t
 
 console.log(reducerIf('uppercase', 'string')); // STRING
 console.log(reducerIf('lowercase', 'STRing')); // string
